@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|c:\\users\\timurbeslaneev\\source\\repos\\consola\\helpers\\pathfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|solutionrelative:helpers\\pathfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\helpers\\graphprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|solutionrelative:helpers\\graphprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|c:\\users\\timurbeslaneev\\source\\repos\\consola\\helpers\\adjacencyconstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{144E362D-D825-451C-93F7-B7C6556E1A3B}|consola.csproj|solutionrelative:helpers\\adjacencyconstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 144,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdjacencyConstructor.cs",
+              "DocumentMoniker": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Helpers\\AdjacencyConstructor.cs",
+              "RelativeDocumentMoniker": "Helpers\\AdjacencyConstructor.cs",
+              "ToolTip": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Helpers\\AdjacencyConstructor.cs",
+              "RelativeToolTip": "Helpers\\AdjacencyConstructor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:26:20.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GraphPrinter.cs",
+              "DocumentMoniker": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Helpers\\GraphPrinter.cs",
+              "RelativeDocumentMoniker": "Helpers\\GraphPrinter.cs",
+              "ToolTip": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Helpers\\GraphPrinter.cs",
+              "RelativeToolTip": "Helpers\\GraphPrinter.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwCcAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:20:13.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAArwE8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T13:27:19.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PathFinder.cs",
+              "DocumentMoniker": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Helpers\\PathFinder.cs",
+              "RelativeDocumentMoniker": "Helpers\\PathFinder.cs",
+              "ToolTip": "C:\\Users\\TimurBeslaneev\\source\\repos\\consola\\Helpers\\PathFinder.cs",
+              "RelativeToolTip": "Helpers\\PathFinder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T08:22:44.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
