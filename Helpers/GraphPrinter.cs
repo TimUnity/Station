@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Consola.Helpers
 {
-    internal class GraphPrinter
+    public class GraphPrinter
     {
         public static void GraphPrintOut(Dictionary<int, List<int>> graph) 
         {
-            Console.WriteLine("Graph:");
+            Console.WriteLine();
+            Console.WriteLine("Nodes:");
             int maxNeighbors = graph.Values.Max(list => list.Count);
 
             // заголовок

@@ -7,17 +7,21 @@ using System.Threading.Tasks;
 
 namespace Consola.Helpers
 {
-    internal class PointToKeyConverter
+    public class PointToKeyConverter
     {
         public static int PointToKey(Point point) 
         {
-            return point.X * 1000 + point.Y;
+            int x = Math.Abs(point.X);
+            int y = Math.Abs(point.Y);
+
+            return x * 1000 + y;
         }
 
         public static Point KeyToPoint(int key) 
         {
             int x = key / 1000;
             int y = key % 1000;
+
             return new Point(x, y);
         }
     }

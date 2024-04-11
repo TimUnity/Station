@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Consola.Helpers
 {
-    internal class AdjacencyConstructor
+    public class AdjacencyConstructor
     {
         public static Dictionary<int, List<int>> ConstructAdjacencyList(List<Path> paths) {
             var adjacencyList = new Dictionary<int, List<int>>();
@@ -18,6 +18,8 @@ namespace Consola.Helpers
 
                     int startKey = PointToKeyConverter.PointToKey(startPoint);
                     int endKey = PointToKeyConverter.PointToKey(endPoint);
+
+                    Console.WriteLine($"{startKey}:{endKey}");
 
                     // Добавление в список смежности
                     if (!adjacencyList.ContainsKey(startKey)) {

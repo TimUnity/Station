@@ -1,25 +1,19 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Consola.Helpers
 {
-    internal class PathFinder
+    public class PathFinder
     {
-        public static void FindShortestPath(Dictionary<int, List<int>> graph, int startNode, int endNode) 
-        {
+        public static void FindShortestPath(Dictionary<int, List<int>> graph, int startNode, int endNode) {
             var shortestPaths = new Dictionary<int, (int, int)>();
             var unvisitedNodes = new SortedSet<(int, int)> { (0, startNode) };
 
-            while (unvisitedNodes.Count > 0) 
-            {
+            while (unvisitedNodes.Count > 0) {
                 var currentNode = unvisitedNodes.Min.Item2;
                 unvisitedNodes.Remove(unvisitedNodes.Min);
 
-                foreach (var neighbor in graph[currentNode]) 
-                {
+                foreach (var neighbor in graph[currentNode]) {
                     var weight = 1;
                     var newWeight =
                         shortestPaths.ContainsKey(currentNode) ?
@@ -27,8 +21,7 @@ namespace Consola.Helpers
                         weight;
 
                     if (
-                        !shortestPaths.ContainsKey(neighbor) || newWeight < shortestPaths[neighbor].Item2) 
-                    {
+                        !shortestPaths.ContainsKey(neighbor) || newWeight < shortestPaths[neighbor].Item2) {
                         shortestPaths[neighbor] = (currentNode, newWeight);
                         unvisitedNodes.Add((newWeight, neighbor));
                     }
@@ -38,8 +31,7 @@ namespace Consola.Helpers
             var path = new List<int>();
             var current = endNode;
 
-            while (current != startNode) 
-            {
+            while (current != startNode) {
                 path.Add(current);
                 current = shortestPaths[current].Item1;
             }
@@ -49,8 +41,7 @@ namespace Consola.Helpers
 
             Console.WriteLine("Shortest path:");
 
-            foreach (var node in path) 
-            {
+            foreach (var node in path) {
                 Console.WriteLine(
                     $"{PointToKeyConverter.KeyToPoint(node).X}." +
                     $"{PointToKeyConverter.KeyToPoint(node).Y}");
@@ -60,9 +51,8 @@ namespace Consola.Helpers
         }
 
         public static void DepthSearch(
-            Dictionary<int, List<int>> graph, int currentNode, int endNode, 
-            HashSet<int> visitedNodes, Stack<int> path) 
-        {
+            Dictionary<int, List<int>> graph, int currentNode, int endNode,
+            HashSet<int> visitedNodes, Stack<int> path) {
             visitedNodes.Add(currentNode);
             path.Push(currentNode);
 
@@ -78,7 +68,7 @@ namespace Consola.Helpers
 
             if (path.Peek() == currentNode) {
                 path.Pop(); // Возврат, если путь к конечному узлу не найден
-            }            
+            }
         }
     }
 }

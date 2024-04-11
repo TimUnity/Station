@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Consola
 {
@@ -11,6 +11,11 @@ namespace Consola
         {
             Name = name;
             Paths = new List<Path>();
+        }
+
+        public void SetPathList(List<Path> paths) 
+        {
+            Paths = paths;
         }
 
         public void AddPath(Path path)

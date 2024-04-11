@@ -11,40 +11,50 @@ namespace Consola
     {
         private static void Main()
         {
-            #region Hardcoded data
+            #region Hardcoded data   
 
-            // Секции
-            var sectionA = new Point(0, 0);
-            var sectionB = new Point(1, 1);
-            var sectionC = new Point(2, 3);
-            var sectionD = new Point(3, 2);
-            var sectionE = new Point(4, 3);
-            var sectionF = new Point(5, 6);
-            var sectionG = new Point(6, 7);
-
-            // Пути
-            var pathAB = new Path("Path A");
-            pathAB.AddSegment(new Segment(sectionA, sectionB));
-
-            var pathBC = new Path("Path B");
-            pathBC.AddSegment(new Segment(sectionB, sectionC));
-
-            var pathCD = new Path("Path C");
-            pathCD.AddSegment(new Segment(sectionC, sectionD));
-
-            var pathEF = new Path("Path E");
-            pathEF.AddSegment(new Segment(sectionD, sectionF));
-
-            var pathFG = new Path("Path F");
-            pathFG.AddSegment(new Segment(sectionF, sectionG));
+            var paths = new List<Path>
+            {
+                new Path("Path A")
+                {
+                    Segments = new List<Segment>
+                    {
+                        new Segment(new Point(0, 0), new Point(1, 1))
+                    }
+                },
+                new Path("Path B")
+                {
+                    Segments = new List<Segment>
+                    {
+                        new Segment(new Point(1, 1), new Point(2, 3))
+                    }
+                },
+                new Path("Path C")
+                {
+                    Segments = new List<Segment>
+                    {
+                        new Segment(new Point(2, 3), new Point(3, 2))
+                    }
+                },
+                new Path("Path D")
+                {
+                    Segments = new List<Segment>
+                    {
+                        new Segment(new Point(3, 2), new Point(5, 6))
+                    }
+                },
+                new Path("Path E")
+                {
+                    Segments = new List<Segment>
+                    {
+                        new Segment(new Point(5, 6), new Point(6, 7))
+                    }
+                }
+            };
 
             // Парк
             var parkOne = new Park("Central Park");
-            parkOne.AddPath(pathAB);
-            parkOne.AddPath(pathBC);
-            parkOne.AddPath(pathCD);
-            parkOne.AddPath(pathEF);
-            parkOne.AddPath(pathFG);
+            parkOne.SetPathList(paths);
 
             #endregion     
             
